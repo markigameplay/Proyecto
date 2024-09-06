@@ -1,0 +1,117 @@
+/* Reinicia los márgenes y relleno predeterminados para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho/alto total del elemento */
+    font-family: 'Arial', sans-serif; /* Establece la fuente Arial como predeterminada */
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    height: 100vh; /* La altura del cuerpo será igual a la altura total de la ventana */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background: linear-gradient(135deg, #3e0059, #b32d74, #dbf7f4); /* Fondo degradado en diagonal */
+    background-size: cover; /* Asegura que el fondo cubra toda la ventana */
+}
+
+/* Contenedor que envuelve el formulario de inicio de sesión */
+.login-container {
+    display: flex; /* Flexbox para centrar el formulario */
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el formulario verticalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100%; /* Ocupa toda la altura disponible */
+}
+
+/* Estilos del formulario de inicio de sesión */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el formulario */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo detrás del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 50px; /* Espaciado interno del formulario */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
+    width: 400px; /* Ancho fijo para el formulario */
+    text-align: center; /* Texto centrado dentro del formulario */
+}
+
+/* Estilo del título (Login) */
+h2 {
+    color: #000000; /* Texto en negro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 28px; /* Tamaño de fuente grande para el título */
+}
+
+/* Grupo de inputs (email y password) */
+.input-group {
+    margin-bottom: 20px; /* Espacio debajo de cada campo de entrada */
+    position: relative; /* Posicionamiento relativo para futuros ajustes si se necesitan */
+}
+
+/* Estilo de los campos de entrada (email y password) */
+.input-group input {
+    width: 100%; /* Los campos de entrada ocupan todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno de los campos */
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para los campos */
+    border: none; /* Sin borde alrededor de los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto en blanco dentro de los campos */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del texto de marcador de posición (placeholder) dentro de los campos de entrada */
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Texto del placeholder en blanco con algo de transparencia */
+}
+
+/* Contenedor de opciones (Remember Me y Forgot Password) */
+.options {
+    display: flex; /* Flexbox para organizar los elementos horizontalmente */
+    justify-content: space-between; /* Separa los elementos hacia los extremos del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-bottom: 30px; /* Espacio debajo de las opciones */
+    color: white; /* Texto en blanco */
+    font-size: 14px; /* Tamaño de fuente pequeño */
+}
+
+/* Estilo del enlace de Forgot Password */
+.options a {
+    color: #000000; /* Texto en negro para el enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilo del botón de iniciar sesión */
+button {
+    width: 100%; /* El botón ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #000000; /* Fondo negro del botón */
+    border: none; /* Sin borde alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto en blanco dentro del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+}
+
+/* Efecto hover en el botón de iniciar sesión */
+button:hover {
+    background-color: #000000; /* Mantiene el fondo del botón negro al pasar el cursor */
+}
+
+/* Estilo del texto debajo del botón (¿No tienes una cuenta? Register) */
+p {
+    margin-top: 20px; /* Espacio encima del texto */
+    color: rgb(0, 0, 0); /* Texto en negro */
+    font-size: 14px; /* Tamaño de fuente pequeño */
+}
+
+/* Estilo del enlace de registro */
+p a {
+    color: #ffffff; /* Texto en negro para el enlace de registro */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilo de las etiquetas */
+label {
+    color: #000000; /* Texto en negro para las etiquetas */
+}

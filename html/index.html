@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Contenedor principal que envuelve todo el formulario -->
+    <div class="login-container">
+        <!-- Formulario de inicio de sesión -->
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2> <!-- Título del formulario -->
+
+            <!-- Grupo de entrada para el correo electrónico -->
+            <div class="input-group">
+                <input type="email" placeholder="Correo Electrónico" required> <!-- Campo de entrada para el email -->
+            </div>
+
+            <!-- Grupo de entrada para la contraseña -->
+            <div class="input-group">
+                <input type="password" placeholder="Contraseña" required> <!-- Campo de entrada para la contraseña -->
+            </div>
+
+            <!-- Opciones como recordar usuario y enlace a "Olvidé mi contraseña" -->
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Recuérdame <!-- Checkbox para recordar al usuario -->
+                </label>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a> <!-- Enlace a "Olvidé mi contraseña" -->
+            </div>
+
+            <!-- Botón para enviar el formulario (iniciar sesión) -->
+            <button type="submit">Iniciar Sesión</button>
+
+            <!-- Enlace para registrarse si el usuario no tiene cuenta -->
+            <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </form>
+    </div>
+</body>
+</html>
